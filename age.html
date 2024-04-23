@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Altersüberprüfung</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      #ageMessage {
+        padding: 10px;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="greeting"></h1>
+    <p id="ageMessage"></p>
+
+    <script>
+      // Benutzerdaten abfragen
+      var name = prompt("Bitte geben Sie Ihren Namen ein:");
+      var age = parseInt(prompt("Bitte geben Sie Ihr Alter ein:"));
+
+      // Begrüßung anpassen
+      var greetingElement = document.getElementById("greeting");
+      greetingElement.textContent = "Hallo, " + name + "!";
+
+      // Altersprüfung
+      try {
+        if (age < 18) {
+          throw "Du bist zu jung, um den Inhalt zu sehen!";
+        } else {
+          // Altersabhängige Nachricht
+          var ageMessageElement = document.getElementById("ageMessage");
+          ageMessageElement.textContent = "Du darfst den Inhalt sehen!";
+          ageMessageElement.style.backgroundColor = "green";
+        }
+      } catch (error) {
+        console.error(error);
+        // Altersabhängige Nachricht
+        var ageMessageElement = document.getElementById("ageMessage");
+        ageMessageElement.textContent = error;
+        ageMessageElement.style.backgroundColor = "red";
+      }
+    </script>
+  </body>
+</html>
