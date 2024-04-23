@@ -13,7 +13,7 @@ Schreibe ein Script, dass das Alter und den Namen des Users abfragt.
     <p id="ageMessage"></p>
   </body>
 </html>
-Aufgaben
+Aufgaben:
 Benutzerdaten abfragen: Frage den Benutzer nach seinem Namen und Alter.
 Altersprüfung: Überprüfe, ob das Alter unter 18 Jahre ist. Wenn ja, wirf einen Fehler und fange diesen ab, um eine Fehlermeldung in der Konsole auszugeben.
 Begrüßung anpassen: Verändere den Inhalt des <h1>-Elements, um den Benutzer beim Namen zu begrüßen. Der User sollte immer gegrüßt werden. Egal ob er den Content sehen darf oder nicht.
